@@ -30,6 +30,7 @@ function calculateIncomeTax(basicSalary , benefits){
         else {
             tax = (0.1 * grossSalary)+ (0.25 * (32333-24000)) + (0.3 * (500000-32333)) +(0.325* (800000 - 500000)) + (0.35 * (grossSalary - 800000))
         }
+        //parse tax to whole number value
         console.log(`Your income tax is: ${parseInt(tax)}`)
     }
 
