@@ -1,5 +1,5 @@
 const readline = require("readline")
-
+//create interface to read in terminal
 const rl = readline.createInterface({
     input: process.stdin,
     output:process.stdout
@@ -7,12 +7,13 @@ const rl = readline.createInterface({
 })
 
 //function to calculate tax
-function calculateNetSalary(basicSalary , benefits){
-
-    if (basicSalary===null || isNaN(basicSalary) || isNaN(benefits) || basicSalary <0 || benefits <0 || benefits ===n){
-        console.log("Please enter a number: ")
+function calculateIncomeTax(basicSalary , benefits){
+    //Check if the inputted basicSalary & benefits are valid values
+    if (basicSalary===null || isNaN(basicSalary) || isNaN(benefits) || basicSalary <0 || benefits <0 || benefits ===null){
+        console.log("Please enter a valid number. Retry")
     } else {
         let grossSalary = basicSalary + benefits; 
+        console.log(`Your gross salary is ${grossSalary}`)
         let tax;
         if (grossSalary >0 && grossSalary <=24000){
             tax = 0.1 * grossSalary
@@ -29,10 +30,12 @@ function calculateNetSalary(basicSalary , benefits){
         else {
             tax = (0.1 * grossSalary)+ (0.25 * (32333-24000)) + (0.3 * (500000-32333)) +(0.325* (800000 - 500000)) + (0.35 * (grossSalary - 800000))
         }
-        console.log(`Your income tax is: ${tax}`)
+        console.log(`Your income tax is: ${parseInt(tax)}`)
     }
 
 }
+
+
 
 //prompt for salary
 rl.question("Enter your basic salary:", (basicInput) =>{
@@ -41,8 +44,8 @@ rl.question("Enter your basic salary:", (basicInput) =>{
     rl.question("Enter the total amount of your benefits:", (benefitInput) =>{
         let benefits= parseInt(benefitInput)
 
-       //call function that calculates net salary
-       calculateNetSalary(basicSalary, benefits)
+       //call function that calculates income tax
+       calculateIncomeTax(basicSalary, benefits);
 
     //close the readline interface
     rl.close();

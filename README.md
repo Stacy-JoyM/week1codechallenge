@@ -6,7 +6,7 @@
 
 ## Student Grade Generator
 ### Description
-The projects entails node operation in backedn that takes in percentage grade from 0 -100 and generates a grade from A-E.
+The projects entails node operation in backend that takes in percentage grade from 0 -100 and generates a grade from A-E.
 
 
 ## Speed Detector
