@@ -25,8 +25,8 @@ The Installation process is same for all since the files are in the same folder.
 * Extract the files
 * Open the extracted folder with VSCode
 * Run "node grade.js" in terminal to get prompt for grades calculator
-* Run "node salary.js" to get prompt for salary calculator
-* Run "node speed.js" to get prompt for speed meter
+* Run "node salary.js" in terminal to get prompt for salary calculator
+* Run "node speed.js" in terminal to get prompt for speed meter
 
 ## Known Bugs
 The applications work perfectly well, no bugs.
