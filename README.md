@@ -6,15 +6,16 @@
 
 ## Student Grade Generator
 ### Description
-
+The projects entails node operation in backedn that takes in percentage grade from 0 -100 and generates a grade from A-E.
 
 
 ## Speed Detector
 ### Description
-
+The project entails node operation in backend that checks speed from 0 to 180 and outputs "Ok" for speed upto 70km/s. From 70km/s to a certain speed limit, it prints points. Once points exceed 12, the program prints "license suspended"
 
 ## Net Salary Calculator
 ### Description
+The project entails node operation in the baxked that calculates income tax, gross salary when basic salary and benefits are inputed.
 
 
 ## Project Setup
