@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 function speedCalculator(speed){
     //Checks if the inputted speed is a valid number from 0 -180 km/s
     if (isNaN(speed) || speed <0 || speed > 180){
-        console.log("Enter a valid number ")
+        console.log("Please enter speed from 0 to 180. Retry")
     }else {
         if (speed>0 && speed <=70){
             console.log('Ok')
